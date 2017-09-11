@@ -32,7 +32,7 @@ $(document).ready(function(){
 		var oldValue = thisItem.html();
 		//create an input instead of the text to help you edit
 		var inputElement = $('<input />',{
-			"class": "inputText",
+			"class": "form-control",
 			"value": "",
 			"keypress": function(e){
 				//if Enter button is clicked so convert this input to HTML then call reBuildString function
