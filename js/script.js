@@ -29,10 +29,11 @@ $(document).ready(function(){
 
 	$('.task,.step').dblclick(function(){
 		var thisItem = $(this);
+		var oldValue = thisItem.html();
 		//create an input instead of the text to help you edit
 		var inputElement = $('<input />',{
 			"class": "inputText",
-			"value": thisItem.html(),
+			"value": "",
 			"keypress": function(e){
 				//if Enter button is clicked so convert this input to HTML then call reBuildString function
 				if(e.which == 13) {
@@ -48,6 +49,7 @@ $(document).ready(function(){
 		thisItem.html("<div><small>Press Enter to save</small></div>");//for a hint
 		inputElement.appendTo(thisItem);
 		inputElement.focus();//focus on this input
+		inputElement.val(oldValue);//to add focus cursor at end of input element
 	});
 
 });
