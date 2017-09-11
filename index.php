@@ -63,7 +63,6 @@ if($taskMatch_status && $stepMatch_status){
     
     <script src="js/libs/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/libs/knockout.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
